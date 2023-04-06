@@ -9,6 +9,14 @@ console.log(pets.length);
 // use the length property to access the last item in the Array
 console.log(pets[pets.length - 1]);
 // with for...of, loop over the Array, modify the value and add to a different Array
-for (let number of pets){
-  console.log(number);
+
+
+const newArray = [];
+
+for (let pet of pets) {
+  pet = "This is pet number " + pet;
+  newArray.push(pet);
 }
+
+console.log(newArray);
+
